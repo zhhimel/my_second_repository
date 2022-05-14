@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-size: 100%;
+            background-image: url('https://media.istockphoto.com/photos/cute-red-kitten-is-sleeping-on-his-back-and-smiling-paws-up-concept-picture-id1144982182?k=20&m=1144982182&s=612x612&w=0&h=VBL-PDRr9FddwkY4c7yBIkozv6669r-xNl-QJRRb1iw=');
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .left {
+
+            /* border: 2px solid red; */
+            display: inline-block;
+
+            box-sizing: border-box;
+            width: 15%;
+
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            text-align: center;
+            width: 40%;
+            margin: auto;
+            margin-top: -70px;
+            height: 100px;
+            padding-top: 25px;
+            box-sizing: border-box;
+        }
+
+        .down {
+            /* border: 2px solid yellow; */
+            position: absolute;
+            right: 585px;
+            bottom: 5px;
+
+        }
+
+        .btn {
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .header {
+            background-color: rgb(243 158 32 / 80%);
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .navbar ul {
+            margin-top: -3px;
+        }
+
+        .navbar li a {
+
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: antiquewhite;
+            color: black;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+
+        .search {
+            position: absolute;
+            right: 62px;
+            top: 78px;
+
+        }
+
+        .search input {
+            font-size: ;
+            border: 2px solid rgb(210, 210, 210);
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+
+        }
+
+        #image {
+            width: 118px;
+            height: 90px;
+            padding-left: 26px;
+            padding-top: 23px;
+        }
+
+        .container {
+            /* border:2px solid white; */
+            width: 25%;
+            height: 500px;
+            background-color: rgb(90 153 208 / 60%);
+            margin: 45px;
+
+            padding: 2px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .form {
+            margin: 10px auto;
+            width: 100%;
+            padding-left: 3px;
+        }
+
+        .form input {
+            text-align: center;
+            color: black;
+            display: block;
+            width: 80%;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #formup {
+            margin-top: 115px;
+            margin-left: 50px;
+        }
+
+        .Heading {}
+
+        .Heading h1 {
+            text-align: center;
+            color: #8c141f;
+            margin-bottom: 14px;
+        }
+
+        .Heading p {
+            text-align: justify;
+            padding: 0px 4px;
+
+        }
+
+        .btn1 {
+            background-color: rgb(201 134 34);
+            border-radius: 10px;
+            border: 4px outset;
+            cursor: pointer;
+            font-size: 13px;
+            text-align: center;
+            display: block;
+            margin-left: 88px;
+            font-weight: bold;
+            padding: 2px 20px;
+        }
+
+        .btn1:hover {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="image/1650543803914.jpg" id="image">
+
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="w">Home</a></li>
+                    <li><a href="w">About</a></li>
+                    <li><a href="w">Services</a></li>
+                    <li><a href="w">Training</a></li>
+                    <li><a href="w">Accessories</a></li>
+        </div>
+        </ul>
+        </nav>
+        </div>
+        <aside>
+            <div class="search">
+                <input type="text" placeholder="&#128269;Search Here...">
+        </aside>
+    </header>
+    <section>
+        <div class="container">
+            <div class="Heading">
+                <h1>Welcome to Petarea!</h1>
+                <p>We provide the best Pet Food and Products throughout Bangladesh.We consider our success by the
+                    happiness of your pets and pet lovers, not with the numbers of parcels we deliver.</p>
+            </div>
+            <form action="b.php" id="formup">
+                <div class="form">
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="What is your pet?">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Age of your pet?">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="What service do you want from us?">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Give us contact number or, email">
+                </div>
+
+                <button class="btn1">Submit</button>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="down">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+            <button class="btn">Any complaint?</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
